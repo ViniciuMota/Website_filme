@@ -1,0 +1,19 @@
+@use "variables";
+
+.hero {
+  min-height: 33vw;
+  background-image: url(../images/ironman_hero.jpg);
+  background-size: cover;
+
+  &__content {
+    max-width: 435px;
+    margin-left: 20vw;
+    padding-top: 10vw;
+  }
+
+  h3 {
+    text-align: center;
+    padding-top: 16px;
+    color: variables.$textColor;
+  }
+}
