@@ -1,13 +1,17 @@
 @use "variables";
 
 .movies {
+  padding-bottom: 32px;
+
   &__tabs {
     display: flex;
     justify-content: center;
+    padding-top: 24px;
 
     &__button {
       color: variables.$textColor;
       font-size: 16px;
+      font-weight: bold;
       border: none;
       background: none;
       text-transform: uppercase;
@@ -23,9 +27,28 @@
 
   &__list {
     display: none;
+    max-width: 1024px;
+    width: 100%;
 
     &--is-active {
       display: block;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+
+      &__image {
+        padding-top: 24px;
+
+        img {
+          max-width: 400px;
+          width: 100%;
+        }
+      }
     }
   }
 }
