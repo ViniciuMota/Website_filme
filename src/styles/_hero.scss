@@ -5,10 +5,30 @@
   background-image: url(../images/ironman_hero.jpg);
   background-size: cover;
 
+  @media (max-width: 768px) {
+    background-image: url(../images/ironman_hero_mobile.jpg);
+  }
+
   &__content {
     max-width: 435px;
     margin-left: 20vw;
     padding-top: 10vw;
+
+    @media (max-width: 768px) {
+      margin: auto 16px;
+      padding-top: 30vw;
+    }
+
+    &__logo {
+      width: 100%;
+
+      @media (max-width: 768px) {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 80vw;
+        display: block;
+      }
+    }
   }
 
   h3 {
