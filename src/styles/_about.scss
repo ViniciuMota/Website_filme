@@ -1,0 +1,11 @@
+@use 'variables';
+
+.about {
+
+    margin: 16px 0;
+
+    @media (max-width: 768px) {
+        display: block;
+        margin: auto 16px;
+    }
+}

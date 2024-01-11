@@ -2,6 +2,7 @@
 @use "hero";
 @use "movies";
 @use "footer";
+@use "about";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 
@@ -95,4 +96,10 @@ h5 {
 
 .title--small {
   @include title(38px);
+}
+
+.container {
+  max-width: 100%;
+  width: 1024px;
+  margin: 0 auto;
 }
